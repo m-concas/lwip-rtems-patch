@@ -1276,12 +1276,6 @@ diff --git a/src/include/lwip/opt.h b/src/include/lwip/opt.h
 index 481bf76..89d509d 100644
 --- a/src/include/lwip/opt.h
 +++ b/src/include/lwip/opt.h
-@@ -1324,7 +1324,7 @@
-  * sys_thread_new() when the thread is created.
-  */
- #if !defined TCPIP_THREAD_STACKSIZE || defined __DOXYGEN__
+@@ -1816,1 +1816,1 @@
 -#define TCPIP_THREAD_STACKSIZE          0
 +#define TCPIP_THREAD_STACKSIZE          2048
- #endif
- 
- /**
