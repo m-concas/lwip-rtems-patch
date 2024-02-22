@@ -1,6 +1,6 @@
 diff --git a/Makefile b/Makefile
 new file mode 100644
-index 00000000..48dda08c
+index 00000000..5bad4a84
 --- /dev/null
 +++ b/Makefile
 @@ -0,0 +1,170 @@
@@ -28,7 +28,7 @@ index 00000000..48dda08c
 +LWIP_NETIF_PATH=$(LWIP_SRC_PATH)/netif
 +
 +# ARCH
-+LWIPARCH_PATH=$(LWIP_PATH)/contrib/ports
++LWIPARCH_PATH=$(LWIP_PATH)/contrib/ports/rtems
 +LWIPARCH_SRC_PATH=$(LWIPARCH_PATH)
 +LWIPARCH_INCL_PATH=$(LWIPARCH_PATH)/include
 +
