@@ -1004,7 +1004,7 @@ index 00000000..b578b293
 +#endif /* __LWIPOPTS_H__ */
 diff --git a/contrib/ports/rtems/sys_arch.c b/contrib/ports/rtems/sys_arch.c
 new file mode 100644
-index 00000000..3348ce60
+index 00000000..6e5d5d26
 --- /dev/null
 +++ b/contrib/ports/rtems/sys_arch.c
 @@ -0,0 +1,326 @@
@@ -1047,11 +1047,11 @@ index 00000000..3348ce60
 + * DETAILS: ./lwip/doc/sys_arch.txt
 + */
 +
-+#include "sys_arch.h"
 +#include "lwip/err.h"
 +#include "lwip/tcpip.h"
 +#include "lwipopts.h"
 +#include <arch/cc.h>
++#include <arch/sys_arch.h>
 +#include <rtems.h>
 +#include <rtems/rtems/clock.h>
 +#include <rtems/rtems/sem.h>
