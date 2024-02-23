@@ -1,6 +1,6 @@
 diff --git a/Makefile b/Makefile
 new file mode 100644
-index 00000000..5bad4a84
+index 00000000..b64d6b5e
 --- /dev/null
 +++ b/Makefile
 @@ -0,0 +1,170 @@
@@ -170,8 +170,8 @@ index 00000000..5bad4a84
 +	mkdir -p $(INSTALL_DIR)/lib
 +	cp $(LIB) $(INSTALL_DIR)/lib
 +	cp -r $(CORE_H) $(INSTALL_DIR)
-+	cp $(LWIPARCH_INCL_PATH)/lwipopts.h $(INSTALL_DIR)/include
-+	cp -r $(LWIPARCH_INCL_PATH)/arch $(INSTALL_DIR)/include
++	cp -r $(LWIPARCH_INCL_PATH)/* $(INSTALL_DIR)/include
++# cp -r $(LWIPARCH_INCL_PATH)/arch $(INSTALL_DIR)/include
 +
 +CPPFLAGS+=$(HEADERS)
 diff --git a/contrib/ports/rtems/include/arch/cc.h b/contrib/ports/rtems/include/arch/cc.h
