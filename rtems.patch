@@ -1,6 +1,6 @@
 diff --git a/Makefile b/Makefile
 new file mode 100644
-index 00000000..b64d6b5e
+index 00000000..6dfa9999
 --- /dev/null
 +++ b/Makefile
 @@ -0,0 +1,170 @@
@@ -68,7 +68,7 @@ index 00000000..b64d6b5e
 +
 +
 +SOURCES =  $(DRIVER_SRC) $(SNMP_SRC)\
-+           $(CORE_SRC) $(IPV4_SRC) $(API_SRC) $(NETIF_SRC) $(ARCH_SRC)
++           $(CORE_SRC) $(IPV4_SRC) $(IPV6_SRC) $(API_SRC) $(NETIF_SRC) $(ARCH_SRC)
 +
 +
 +#### HEADERS ###################################################################
@@ -171,7 +171,7 @@ index 00000000..b64d6b5e
 +	cp $(LIB) $(INSTALL_DIR)/lib
 +	cp -r $(CORE_H) $(INSTALL_DIR)
 +	cp -r $(LWIPARCH_INCL_PATH)/* $(INSTALL_DIR)/include
-+# cp -r $(LWIPARCH_INCL_PATH)/arch $(INSTALL_DIR)/include
++# cp -r $(LWIPARCH_INCL_PATH)/arch $(INSTALL_DIR)/include TODO:ADD IP6
 +
 +CPPFLAGS+=$(HEADERS)
 diff --git a/contrib/ports/rtems/include/arch/cc.h b/contrib/ports/rtems/include/arch/cc.h
