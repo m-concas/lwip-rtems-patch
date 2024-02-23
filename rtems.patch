@@ -1345,5 +1345,5 @@ index c27dd034..4b3b7afa 100644
 -#define TCPIP_THREAD_STACKSIZE          0
 +#define TCPIP_THREAD_STACKSIZE          2048
  #endif
-
+ 
  /**
